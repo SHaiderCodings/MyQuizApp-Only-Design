@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <nav class="navbar navbar-dark bg-primary"  style="background-color: #e3f2fd;">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" href="index.html" id="fb"> Quiz Application   </a>
+                    </div>
+                   
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Student Login</a></li>
+                    </ul>
+                  </div>
+            </nav>
+            <div class="container" >
+                    <p id="para1">
+                    Student  Sign up
+                    </p>  
+   
+            
+               </div>
+
+<div id="main-form">
+            <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="name" type="text" class="form-control" name="name" placeholder="Enter Name">
+                  </div>
+        
+                  <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                        <input id="Number" type="number" class="form-control" name="Number" placeholder="Enter Mobile Number">
+                      </div>
+        
+        
+        
+                   <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                  </div>
+        
+        
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                  </div>
+        
+                  <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-file"></i></span>
+                        <input id="pic" type="file" class="form-control" name="file">
+                      </div>
+                      <div class="input-group">
+                            <!-- <label for="sel1">Gender</label> -->
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        
+                            <select class="form-control" id="gen">
+                              <option>Male </option>
+                              <option>female</option>
+                             
+                            </select>
+        
+        
+                        </div><br>
+                        <button type="button" class="btn btn-info" onclick="signup()">Submit</button> <br><br>
+                        <button type="button" class="btn btn-primary" onclick="fblogin()">Login with Facebook</button> 
+                        <button type="button" class="btn btn-success" onclick="googlelogin()">Login with Google</button>
+        
+        
+        
+        
+                    </div>
+                    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+                    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+
+                  <script src="app.js"></script>
+     
+</body>
+</html>
